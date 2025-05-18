@@ -28,7 +28,7 @@ Para executar os exercícios no seu computador, você precisa:
 2. **Ter um editor de código**
    - Recomendo o [Visual Studio Code](https://code.visualstudio.com/), mas você pode usar qualquer editor de sua preferência.
 
-3. **Instalar o pacote `prompt-sync` (caso use entrada via terminal)**  
+3. **Instalar o pacote `prompt-sync`**  
    Alguns exercícios utilizam entrada de dados pelo terminal. Para isso, é necessário instalar o pacote `prompt-sync` com o seguinte comando:
 
    ```bash
