@@ -33,3 +33,41 @@ Para executar os exercícios no seu computador, você precisa:
 
    ```bash
    npm install prompt-sync
+
+
+
+# Execícios 01 Mais Prati
+
+## Como Executar os Exercícios
+
+Siga os passos abaixo para executar os exercícios deste repositório:
+
+1. Clone este repositório ou baixe os arquivos
+
+```bash
+git clone https://github.com/rs2chel/Execicios01MaisPrati.git
+```
+
+2. Acesse a pasta com os exercícios
+
+```bash
+cd Execicios01MaisPrati/ExerciciosObrigatorios
+```
+
+3. Abra a pasta no VS Code (ou outro editor de sua preferência)
+
+```bash
+code .
+```
+
+4. Execute o exercício desejado usando o Node.js
+
+```bash
+node nomeDoArquivo.js
+```
+
+### Exemplo
+
+```bash
+node exercicio11.js
+```
