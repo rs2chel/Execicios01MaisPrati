@@ -1,5 +1,35 @@
-// Para executar os comandos localmente tem que instalar o node
-// site para instalar o node nodejs.org/pt
-// ter o visual studio instalado
-// instalando o gerenciador de pacote comando npm install prompt-sync
+# 🧠 Exercícios Obrigatórios de JavaScript
 
+Este repositório contém os exercícios obrigatórios propostos durante a disciplina, com o objetivo de praticar a lógica de programação utilizando **JavaScript puro**.
+
+---
+
+# Objetivo
+
+Desenvolver a lógica de programação por meio da implementação de algoritmos básicos utilizando JavaScript, trabalhando com variáveis, estruturas de repetição, arrays e operações matemáticas.
+
+---
+
+# Estrutura do Repositório
+
+- A pasta `ExerciciosObrigatorios` contém todos os arquivos `.js` com os exercícios resolvidos.
+- Cada arquivo corresponde a um exercício proposto.
+
+---
+
+## 🛠️ Requisitos para executar localmente
+
+Para executar os exercícios no seu computador, você precisa:
+
+1. **Instalar o Node.js**
+   - Acesse o site: [https://nodejs.org/pt](https://nodejs.org/pt)
+   - Baixe e instale a versão recomendada para seu sistema operacional.
+
+2. **Ter um editor de código**
+   - Recomendo o [Visual Studio Code](https://code.visualstudio.com/), mas você pode usar qualquer editor de sua preferência.
+
+3. **Instalar o pacote `prompt-sync` (caso use entrada via terminal)**  
+   Alguns exercícios utilizam entrada de dados pelo terminal. Para isso, é necessário instalar o pacote `prompt-sync` com o seguinte comando:
+
+   ```bash
+   npm install prompt-sync
