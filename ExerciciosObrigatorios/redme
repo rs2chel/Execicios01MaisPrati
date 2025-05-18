@@ -18,39 +18,35 @@ Desenvolver a lógica de programação por meio da implementação de algoritmos
 ---
 
 <<<<<<< HEAD
-##  Requisitos para executar localmente
-=======
+
 ## Requisitos para executar localmente
->>>>>>> e4bc303 (addReadme)
+
+=======
+
+## Requisitos para executar localmente
 
 Para executar os exercícios no seu computador, você precisa:
 
 1. **Instalar o Node.js**
-<<<<<<< HEAD
+
 =======
 
->>>>>>> e4bc303 (addReadme)
-   - Acesse o site: [https://nodejs.org/pt](https://nodejs.org/pt)
-   - Baixe e instale a versão recomendada para seu sistema operacional.
+- Acesse o site: [https://nodejs.org/pt](https://nodejs.org/pt)
+- Baixe e instale a versão recomendada para seu sistema operacional.
 
 2. **Ter um editor de código**
-<<<<<<< HEAD
-=======
+   <<<<<<< HEAD
+   =======
 
->>>>>>> e4bc303 (addReadme)
    - Recomendo o [Visual Studio Code](https://code.visualstudio.com/), mas você pode usar qualquer editor de sua preferência.
 
 3. **Instalar o pacote `prompt-sync`**  
-   Alguns exercícios utilizam entrada de dados pelo terminal. Para isso, é necessário instalar o pacote `prompt-sync` com o seguinte comando:
+    Alguns exercícios utilizam entrada de dados pelo terminal. Para isso, é necessário instalar o pacote `prompt-sync` com o seguinte comando:
 
    ```bash
    npm install prompt-sync
-<<<<<<< HEAD
-
-
-=======
+   <<<<<<< HEAD
    ```
->>>>>>> e4bc303 (addReadme)
 
 # Execícios 01 Mais Prati
 
