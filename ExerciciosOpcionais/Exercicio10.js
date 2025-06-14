@@ -53,7 +53,7 @@ function calculos(numeros) {
 
     estatistica['media'] = estatistica['soma'] / estatistica['total']
 
-    return resultadoTela(numeros.estatistica);
+    return resultadoTela(numeros, estatistica);
 };
 
 
@@ -71,3 +71,7 @@ function menu() {
     }
     calculos(numeros)
 }
+
+
+
+menu()

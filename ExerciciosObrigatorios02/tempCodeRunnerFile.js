@@ -1,0 +1,1 @@
+onsole.log('erro: número negativo')

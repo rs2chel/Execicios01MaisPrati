@@ -11,7 +11,7 @@ function radar(velocidade) {
     if (velocidade > 80) {
         let extra = velocidade - 80
         let valor = extra * 5
-        console.log(`Voce passou a ${velocidade}Km e foi multado em ${valor} reais. `);
+        console.log(`Voce passou a ${velocidade}Km, foi ${extra}km alem do permitido e foi multado em ${valor} reais. `);
 
     } else {
         console.log(`Parabéns voce esta dentro da velocidade permitida `);
