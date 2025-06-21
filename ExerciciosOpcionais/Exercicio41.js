@@ -4,3 +4,25 @@
 // nome e idade.
 
 
+let pessoa = {
+    'nome': 'Rachel',
+    'idade': 26,
+}
+
+
+pessoa['email'] = 'rachelmeijom@gmail.com'
+
+
+// Para acessar todos os dados
+
+// for (dados in pessoa) {
+//     console.log(pessoa[dados])
+// }
+
+console.log(`
+     Nome : ${pessoa['nome']}
+     Idade : ${pessoa['idade']}
+
+    
+    `)
+

@@ -9,16 +9,35 @@
 // Faça um programa que leia quantas horas de atividade uma pessoa teve por mês.
 // Calcule e mostre quantos pontos ela teve e quanto dinheiro ela conseguiu ganhar
 
-function CalculoValor(horas) {
+
+
+function resultado(cliente) {
+    console.log(`
+        Cliente: ${cliente['nome']}
+        Horas feitas: ${cliente['horas']}
+        Pontos recebidos:  ${cliente['pontosTotais']}
+        Valor a receber: ${cliente['valor']}`)
+}
+
+function CalculoValor(nome, horas) {
 
     let pontosPorHora = horas <= 10 ? 2 : horas <= 20 ? 5 : 10
     let pontosTotais = pontosPorHora * horas
     let valor = (pontosTotais * 0.05).toFixed(2)
-    console.log(` O cliente fez ${horas} horas de exercicio e recebeu ${pontosTotais} pontos, o valor a receber é ${valor}`)
+
+    let cliente = {
+        'nome': nome,
+        'horas': horas,
+        'pontosPorHora': pontosPorHora,
+        'pontosTotais': pontosTotais,
+        'valor': valor
+    }
+    resultado(cliente)
+
 }
 
 
-CalculoValor(10)
-CalculoValor(20)
-CalculoValor(40)
-CalculoValor(18)
+CalculoValor('pedro', 10)
+CalculoValor('marcia', 20)
+CalculoValor('eliana', 70)
+CalculoValor('sara', 18)

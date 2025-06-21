@@ -16,6 +16,7 @@ function ehDataValidaa(dia, mes, ano) {
     };
 
     return dia <= diasPorMes[mes];
+    // Se o dia informado for menor ou igual ao número de dias permitidos naquele mês, retorna true.
 }
 
 

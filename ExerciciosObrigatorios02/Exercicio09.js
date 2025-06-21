@@ -20,7 +20,7 @@ function objetoParaPare(obj) {
 }
 
 let arr = [["nome", "Rachel"], ["idade", 25]]
-let obj = { nome: "Rachel", idade: 25 };
+let obj = { nome: "Marta", idade: 29 };
 
 console.log(paresParaObjeto(arr))
 console.log(objetoParaPare(obj))

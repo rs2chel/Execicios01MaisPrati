@@ -18,3 +18,12 @@ function pesoIdeal(alt, sexo) {
 
 
 pesoIdeal(1.89, 'M')
+pesoIdeal(1.78, 'M')
+pesoIdeal(1.56, 'F')
+pesoIdeal(1.65, 'M')
+pesoIdeal(1.35, 'F')
+pesoIdeal(1.21, 'M')
+pesoIdeal(1.55, 'F')
+pesoIdeal(1.32, 'F')
+pesoIdeal(1.44, 'M')
+pesoIdeal(1.63, 'M')

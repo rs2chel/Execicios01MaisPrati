@@ -19,12 +19,13 @@ function ProgressaoAri(razao, numero) {
 
     }
     console.log(`
-    Os números digitados foram: ${numeros}
+    Os 10 primeiros números da PA:  ${numeros}
     A soma dos valores é: ${soma}
     ` )
 
 }
 
 
+ProgressaoAri(4, 8)
 
 

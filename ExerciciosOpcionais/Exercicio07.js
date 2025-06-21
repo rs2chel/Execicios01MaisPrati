@@ -18,10 +18,10 @@ function resultadoTela(cliente) {
 
     console.log(` Cadastro Realizado:
         \n Nome: ${cliente['nome']}
-        \n Serão ${cliente['dias']} dias
-        \n Serão ${cliente['km']} km percorridos.
-        \n E o tipo de carro será ${tipoCarro}
-        \n E o valor total a pagar é: ${cliente['valor'].toFixed(2)}`)
+        \n Dias: ${cliente['dias']} 
+        \n Km:  ${cliente['km']}.
+        \n Carro:  ${tipoCarro}
+        \n Valor total: ${cliente['valor'].toFixed(2)}`)
 }
 function valorTotal(cliente) {
     let valorDia = ((cliente['carro'] === '1') ? 90 : 150) * cliente['dias']
@@ -34,21 +34,57 @@ function valorTotal(cliente) {
     }
 
     cliente['valor'] = valorDia + valorKM
-    console.log(`O carro escolhido foi o tipo ${cliente['carro']} e a distancia percorrida foi ${cliente['km']} o valor a pagar é  ${cliente['valor']}`)
-
-
     resultadoTela(cliente)
 }
 
-function dadosCliente() {
-    console.log("CADASTRO PARA ALUGUEL DE VEICULOS ")
 
-    let cliente = {
-        'nome': prompt("Digite seu nome: "),
-        'dias': prompt("Quantos dias de aluguel: "),
-        'km': prompt("Quantos Km serão percorridos: "),
-        'carro': prompt("Escolha o tipo de carro: \n 1- Carro Popular \n 2- Carro Luxo "),
-        'valor': 0
-    }
-    valorTotal(cliente)
+function lerEntrada(mensagem, validacao) {
+    let valor;
+    do {
+        valor = prompt(mensagem);
+        if (!validacao(valor)) {
+            console.log("Entrada inválida. Tente novamente.");
+        }
+    } while (!validacao(valor));
+    return valor;
 }
+
+function dadosCliente() {
+    console.log("CADASTRO PARA ALUGUEL DE VEÍCULOS ");
+
+    const nome = lerEntrada(
+        "Digite seu nome: ",
+        valor => valor.trim().length > 0
+    );
+
+    const tipoCarro = lerEntrada(
+        "Escolha o tipo de carro: \n 1 - Carro Popular \n 2 - Carro Luxo ",
+        valor => valor === '1' || valor === '2'
+    );
+
+    const dias = Number(lerEntrada(
+        "Quantos dias de aluguel: ",
+        valor => !isNaN(valor) && Number(valor) > 0
+    ));
+
+    const km = Number(lerEntrada(
+        "Quantos Km serão percorridos: ",
+        valor => !isNaN(valor) && Number(valor) >= 0
+    ));
+
+
+
+    const cliente = {
+        nome,
+        dias,
+        km,
+        carro: tipoCarro,
+        valor: 0
+    };
+
+    valorTotal(cliente);
+}
+
+dadosCliente()
+
+

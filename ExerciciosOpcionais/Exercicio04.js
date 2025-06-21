@@ -6,6 +6,8 @@
 
 let triangulo1 = [3, 4, 5];
 let triangulo2 = [2, 3, 6];
+let triangulo3 = [2, 4, 1];
+let triangulo4 = [2, 5, 9];
 
 function verificaTriangulo([a, b, c]) {
 
@@ -19,3 +21,5 @@ function verificaTriangulo([a, b, c]) {
 
 verificaTriangulo(triangulo1);
 verificaTriangulo(triangulo2);
+verificaTriangulo(triangulo3);
+verificaTriangulo(triangulo4);

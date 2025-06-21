@@ -1,8 +1,3 @@
-
-
-
-
-
 // Crie um jogo de JoKenPo (Pedra-Papel-Tesoura).
 
 // pedra ganha de tesoura -> tesoura ganha de papel -> papel ganha de pedra -> 

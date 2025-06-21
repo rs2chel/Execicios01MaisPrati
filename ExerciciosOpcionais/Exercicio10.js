@@ -60,17 +60,33 @@ function calculos(numeros) {
 
 function menu() {
     let opcao = 0;
-    let num = 0;
-    let numeros = []
+    let numeros = [];
+
     while (opcao != 2) {
-        num = Number(prompt('Digite um número: '))
-        numeros.push(num)
+        let num;
+        do {
+            num = Number(prompt('Digite um número: '));
+            if (isNaN(num)) {
+                console.log('Valor inválido! Digite um número válido.');
+            }
+        } while (isNaN(num));
 
-        opcao = Number(prompt('Você deseja adicionar mais números ? \n 1- SIM \n  2- NÃO \n'))
+        numeros.push(num);
 
+        do {
+            opcao = Number(prompt('Você deseja adicionar mais números?\n1 - SIM\n2 - NÃO'));
+            if (opcao !== 1 && opcao !== 2) {
+                console.log('Escolha 1 para SIM ou 2 para NÃO.');
+            }
+
+        } while (opcao !== 1 && opcao !== 2);
     }
-    calculos(numeros)
+
+    calculos(numeros);
 }
+
+
+
 
 
 

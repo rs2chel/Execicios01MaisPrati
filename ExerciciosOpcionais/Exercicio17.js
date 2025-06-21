@@ -9,7 +9,7 @@ function names() {
     let idades = []
     let nome, idade;
 
-    for (i = 0; i < 3; i++) {
+    for (i = 0; i < 9; i++) {
         nome = prompt(`Digite o ${i + 1}º nome:`)
         idade = prompt(`Digite a ${i + 1}ª idade:`)
         nomes.push(nome)
@@ -32,7 +32,7 @@ function checkIdade(nomes, idades) {
 
 
 function filtroMenores(menores) {
-    console.log(`Os menores são:`)
+    console.log(`Os menores de idade são:`)
 
     menores.forEach(pessoa => {
         console.log(`${pessoa[0]} com  ${pessoa[1]} anos de idade. `)
