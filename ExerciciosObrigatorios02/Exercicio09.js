@@ -16,7 +16,6 @@ function paresParaObjeto(pares) {
 function objetoParaPare(obj) {
     let newarray = Object.entries(obj)
     return newarray
-
 }
 
 let arr = [["nome", "Rachel"], ["idade", 25]]
