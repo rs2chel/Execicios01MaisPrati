@@ -60,7 +60,6 @@ let transacoes = [{
 
 function relatorio(transacoes) {
     let dados = {};
-    let cont = 0
 
     transacoes.forEach(transacao => {
         const categoria = transacao.categoria

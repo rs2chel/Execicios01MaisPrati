@@ -129,3 +129,6 @@ function cadastroSalarios() {
     calculos(funcionarios)
 }
 
+
+
+cadastroSalarios()

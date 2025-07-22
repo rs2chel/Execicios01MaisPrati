@@ -1,2 +1,2 @@
 
-    let indexPessoa;
+const funcionarios = gerarFuncionarios(80)

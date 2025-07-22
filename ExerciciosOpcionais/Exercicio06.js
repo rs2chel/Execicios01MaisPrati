@@ -21,3 +21,6 @@ do {
         console.log('Você errou!!! Tente novamente.');
     }
 } while (num !== numeroSorteador);
+
+
+sortNumber()

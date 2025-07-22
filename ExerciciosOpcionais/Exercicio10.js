@@ -20,7 +20,6 @@ function resultadoTela(numeros, estatistica) {
         Total de números pares é: ${estatistica['pares']}
 
         `)
-
 };
 
 
@@ -28,8 +27,8 @@ function calculos(numeros) {
     let estatistica = {
         'total': numeros.length,
         'soma': 0,
-        'menor': numeros[1],
-        'maior': 0,
+        'menor': numeros[0],
+        'maior': numeros[0],
         'media': 0,
         'pares': 0,
 

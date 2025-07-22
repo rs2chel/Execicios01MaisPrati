@@ -9,5 +9,38 @@
 // Salário líquido:
 // (Dicas: desconto de 12%, salário líquido é a diferença entre salário bruto e a redução do
 // INSS)
-m
-class 
+
+function gerarFuncionarios(qtd) {
+    let funcionarios = []
+
+    for (let i = 1; i <= qtd; i++) {
+        let matricula = i
+        let nome = `Funcionário ${i}`
+        let salarioBruto = Math.floor(Math.random() * (10000 - 2000 + 1)) + 2000
+        let deducaoINSS = salarioBruto * 0.12
+        let salarioLiquido = salarioBruto - deducaoINSS
+
+        funcionarios.push({
+            matricula,
+            nome,
+            salarioBruto: salarioBruto.toFixed(2),
+            deducaoINSS: deducaoINSS.toFixed(2),
+            salarioLiquido: salarioLiquido.toFixed(2)
+        })
+    }
+    return funcionarios
+}
+
+function imprimirContracheques(funcionarios) {
+    funcionarios.forEach(func => {
+        console.log("Matrícula:", func.matricula)
+        console.log("Nome:", func.nome)
+        console.log("Salário bruto: R$", func.salarioBruto)
+        console.log("Dedução INSS (12%): R$", func.deducaoINSS)
+        console.log("Salário líquido: R$", func.salarioLiquido)
+    })
+
+}
+
+const funcionarios = gerarFuncionarios(80)
+imprimirContracheques(funcionarios)

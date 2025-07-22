@@ -22,7 +22,6 @@ pessoa['email'] = 'rachelmeijom@gmail.com'
 console.log(`
      Nome : ${pessoa['nome']}
      Idade : ${pessoa['idade']}
-
-    
+     Email:  ${pessoa['email']}
     `)
 

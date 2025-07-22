@@ -138,41 +138,44 @@ function criarReserva() {
     }
 }
 
+// find Retorna o primeiro elemento que satisfaz a condição. 
+// Útil quando você quer um único objeto ou valor.
 
+
+
+// filter Retorna um novo array com todos os elementos que satisfazem a condição.
+// Se nenhum satisfizer, retorna um array vazio [].
+// Útil quando você quer vários resultados.
 function cancelarReserva() {
     //Permitir que um usuário cancele uma reserva
+    // utilizar o 
     let cpf = prompt('Digite seu cpf:')
-    let pessoaID;
-    let indexPessoa;
-    pessoas.forEach(pessoa => {
-        if (pessoa.cpf === cpf) {
-            pessoaID = pessoa.id
-            console.log('CPF encontrado para confirmar o cancelamento da reserva')
-            console.log('pessoaID = pessoa.id', pessoaID = pessoa.id)
-        }
-    })
-    reservas.forEach((reserva, index) => {
-        console.log('reserva', reserva)
-        console.log('idPessoa === reserva.idPessoa', reserva.idPessoa)
-        if (pessoaID === reserva.idPessoa) {
-            // se achar excluiu
-            indexPessoa = index
-            console.log('RESERVA ENCONTRADA')
-            console.log('indexPessoa', indexPessoa)
-            console.log('index', index)
+    let pessoaID = pessoas.find(x => x.cpf === cpf).id
 
-        }
-        reservas.splice(indexPessoa)
-        console.log('RESERVAS')
-        console.log(reservas)
+    if (!pessoaID) {
+        console.log('CPF não encontrado!');
+        return;
     }
-    )
-    //
-    console.log(reservas)
+
+    let numeroReserva = prompt('Digite o numero da reserva:')
+
+    let reservasPessoa =
 
 
 
-
+        reservas.forEach((reserva, index) => {
+            if (pessoaID === reserva.idPessoa) {
+                // se achar excluiu
+                indexPessoa = index
+                reservas.splice(indexPessoa)
+                console.log('Reserva Cancela informacoes:', reserva)
+            }
+        })
+    // Atualiza os quartos disponíveis no hotel
+    // let hotel = hoteis.find(h => h.id === reserva.idHotel);
+    // if (hotel) {
+    //     hotel.quartosDisponiveis += reserva.quantidadeQuartos;
+    // }
 }
 
 function listarReserva() {
@@ -180,26 +183,32 @@ function listarReserva() {
     console.table(reservas)
     //Mostrar todas as reservas, incluindo detalhes do hotel e do cliente.
 }
-
-
-
-
-
-
-function checkInHotel(hoteis, pessoas, reservas) {
+function checkInHotel() {
     //     Check-in:
     // É o momento em que o hóspede chega ao hotel e registra sua chegada, geralmente fornecendo informações pessoais e da reserva. 
     // Inclui a apresentação de documentos e a entrega das chaves ou cartão de acesso ao quarto. 
     // Pode ser feito tanto presencialmente na recepção quanto online, dependendo do hotel. 
     // Normalmente tem um horário de início definido pelo hotel. 
+
+    // vai fornecer o numero da reserva e o cpf
+    console.log(`CHECK IN HOTEL`)
+    console.log(`Para fazer informe os dados necessarios: `)
+    let cpf = prompt('CPF: ')
+    let idReserva = prompt('Numero Reserva: ')
+
+    // Verificar se os dados batem
+    console.log('Reservas: ', reservas)
+
 }
-function chechOut(reservas, hoteis, pessoas) {
+function chechOut() {
 
     // Check-out:
     // É o momento em que o hóspede deixa o hotel, devolvendo as chaves ou cartão e encerrando a estadia. 
     // Geralmente inclui o pagamento de eventuais despesas adicionais, como frigobar ou serviços extras. 
     // Também pode ser realizado online, com o envio da fatura e pagamento por meios eletrônicos. 
     // Normalmente tem um horário limite de saída definido pelo hotel. 
+
+    // vai fornecer o numero da reserva e o cpf e vai receber o valor que tem que pagar
 }
 
 function menu() {
@@ -235,7 +244,7 @@ const hoteis = [
         'cidade': 'BELO HORIZONTE',
         'quartos': 5,
         'quartosDisponiveis': 5,
-        'avaliacoes': []
+        'avaliacoes': [],
     },
     {
         'id': 2,
@@ -254,9 +263,24 @@ const hoteis = [
         'quartosDisponiveis': 5,
         'avaliacoes': []
     },
-
-
 ]
+
+// como de ser os quartos= {
+//   numero: 202,
+//   andar: 2,
+//   camas: 1,
+//   tipoCama: "solteiro casal",
+//   banheiros: 1,
+//   hidromassagem: true,
+//   arCondicionado: true,
+//   sacada: true,
+//   wifi: true,
+//   tv: true,
+//   frigobar: true,
+//   precoPorNoite: 450,
+//   categoria: "executivo",
+//   disponivel: true,
+// }
 const reservas = [{
     'idReserva': 2,
     'idPessoa': 2,
@@ -289,6 +313,7 @@ const pessoas = [
         'cpf': '222.333.111-44'
     },
 ]
+
 //let pessoa = criarPessoa(pessoas)
 
 //pessoas.push(pessoa)

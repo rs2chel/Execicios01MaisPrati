@@ -35,7 +35,7 @@ const somaAbaixoDiagonal = matriz.reduce((soma, linha, i) => {
     }, 0)
 }, 0)
 
-// Exibindo a matriz
+// Mostrando a matriz
 console.log("Matriz 10x10:")
 console.table(matriz)
 

@@ -25,6 +25,7 @@ funcionarios = [
 for (funcionario of funcionarios) {
     console.log(
         `
+    Registro Funcionario 
     Nome: ${funcionario.Nome},
     Cargo: ${funcionario.Cargo},
     Salario: ${funcionario.Salario}

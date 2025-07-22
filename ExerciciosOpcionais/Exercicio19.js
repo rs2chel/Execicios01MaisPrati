@@ -58,6 +58,7 @@ const horariosDeTeste = [
 
 validardata(horariosDeTeste)
 
+hora()
 
 //  hora() caso queira implementar o horario manuamente para teste é so chamar hora()
 
