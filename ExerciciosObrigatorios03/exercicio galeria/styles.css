@@ -2,7 +2,8 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    max-width: 100%;
+    min-width: 100%;
+    min-height: 100%;
 
 }
 
@@ -51,10 +52,12 @@ body {
 }
 
 header {
-    margin-top: 20px;
+    margin-top: 10px;
     display: flex;
     width: 100%;
-    background-color: rgb(240, 213, 213);
+    height: 3%;
+    text-align: justify;
+    background-color: rgb(252, 186, 186);
     justify-content: center;
     align-items: center;
     box-shadow: 5px 1px 6px 1px rgb(184, 130, 130);
@@ -66,6 +69,18 @@ h1 {
     margin-bottom: 1.5%;
     display: flex;
     width: 20%;
-    font-size: 5rem;
+    font-size: 2rem;
 
 }
+
+.container-txt {
+    position: absolute;
+    width: 300px;
+    border: 1px solid rgb(184, 130, 130);
+    padding: 1%;
+    text-align: justify;
+    left: 10px;
+
+}
+
+verificar se vou deixar o txt mesmo ao passar o mouse na imagem falar dela

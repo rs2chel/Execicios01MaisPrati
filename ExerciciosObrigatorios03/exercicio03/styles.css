@@ -1,0 +1,120 @@
+* {
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+body {
+    height: 100%;
+    background-color: #fffaed;
+}
+
+header {
+    margin-top: 1%;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(69, 129, 114);
+    text-align: center;
+    margin-bottom: 10PX;
+
+}
+
+h1 {
+    width: 50%;
+    font-size: 2em
+}
+
+.container-box {
+    margin-top: 30px;
+    margin-bottom: 100px;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+
+
+}
+
+.container-form {
+    margin-top: 50%;
+    width: 100%;
+
+    background-color: rgb(52, 135, 106);
+
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    box-shadow: 3px 3px 5px 3px rgb(242, 250, 188);
+    border-radius: 10PX;
+    text-align: justify;
+
+
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    height: 800px;
+    width: 500PX;
+}
+
+label {
+    font-size: 1.5rem;
+    margin-bottom: 3%;
+}
+
+input {
+    height: 3rem;
+    border-radius: 3px;
+    margin-bottom: 3%;
+    outline: none;
+    padding-left: 10px;
+
+}
+
+input:focus {
+    outline: none;
+    background-color: rgb(234, 244, 233);
+    border: 2px solid rgb(255, 251, 188);
+    color: rgb(27, 126, 49);
+    font-weight: bold;
+
+
+}
+
+
+
+select {
+    font-size: 1.5rem;
+    height: 40px;
+    margin-bottom: 3%;
+    outline: none;
+    border: 2px solid rgb(173, 249, 157);
+    color: rgb(56, 109, 56);
+    border-radius: 3px;
+
+}
+
+button {
+    height: 30px;
+    margin-top: 3%;
+
+}
+
+option {
+    font-size: 1.5rem;
+    outline: none;
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+    background-color: rgb(234, 244, 233);
+}
