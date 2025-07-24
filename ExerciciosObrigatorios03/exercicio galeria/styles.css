@@ -2,9 +2,6 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    min-width: 100%;
-    min-height: 100%;
-
 }
 
 body {
@@ -13,7 +10,10 @@ body {
     align-items: center;
     justify-content: center;
     background-color: rgb(233, 232, 232);
+
 }
+
+
 
 .fotos .container {
     display: grid;
@@ -33,13 +33,12 @@ body {
 }
 
 .fotos .container img {
-    width: 200px;
-    height: 200px;
+    width: 13rem;
+    height: 13rem;
     margin: 1rem;
     padding: 1rem;
     align-items: center;
     justify-content: center;
-
     border: 1px solid rgb(209, 162, 162);
     transition: 2s;
 
@@ -54,7 +53,7 @@ body {
 header {
     margin-top: 10px;
     display: flex;
-    width: 100%;
+    width: 20%;
     height: 3%;
     text-align: justify;
     background-color: rgb(252, 186, 186);
@@ -73,14 +72,35 @@ h1 {
 
 }
 
-.container-txt {
-    position: absolute;
-    width: 300px;
-    border: 1px solid rgb(184, 130, 130);
-    padding: 1%;
-    text-align: justify;
-    left: 10px;
+
+/* Para telas menores que 768px (smartphones) */
+@media (max-width: 767px) {
+
+
+    .fotos .container {
+
+        grid-template-columns: repeat(1, 1fr);
+
+    }
 
 }
 
-verificar se vou deixar o txt mesmo ao passar o mouse na imagem falar dela
+/* Para telas maiores que 768px (smartphones) e menores que 991px*/
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .fotos .container {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+}
+
+
+@media(hover:hover) {
+
+    #foto1:hover body {
+        background-image: url('img/barcoMar.png');
+    }
+
+}
