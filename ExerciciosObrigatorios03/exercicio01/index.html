@@ -11,14 +11,20 @@
 <body>
 
     <header>
-        <nav class="nav-bar">
-            <a>asdga</a>
-            <a>asdga</a>
-            <a>asdga</a>
+        <nav id='nav-bar' class="nav-bar">
+            <div class="links-menu">
+                <a href="#secao1">Heroi</a>
+                <a href="#missao">Furia no ceu</a>
+                <a href="#visao1">Tecnologia</a>
+                <a href="#visao2">O Homem</a>
+
+            </div>
+            <div id="menu" class="menu-icon">☰</div>
         </nav>
 
 
-        <div class="conteiner-orbita">
+
+        <div id='secao1' class="conteiner-orbita">
             <div class="box-header">
                 <h1>HOMEM DE FERRO</h1>
                 <p>
@@ -56,7 +62,7 @@
         </section>
 
         <section id="visao1">
-            <div>
+            <div class="box-tecnologia-text">
                 <h2>Quando a Tecnologia Aponta, É Para Defender</h2>
                 <p>
                     Na linha entre ataque e proteção, Tony Stark sabe exatamente onde pisar. Em meio a destroços e
@@ -70,12 +76,12 @@
                 </p>
             </div>
             <div>
-                <img src="img/foto1.png" alt="Homem de Ferro em ação defensiva" />
+                <img id='HF-mao' src="img/foto1.png" alt="Homem de Ferro em ação defensiva" />
             </div>
         </section>
 
         <section id="visao2">
-            <div>
+            <div class="box-tony-text">
                 <h2>O Homem Por Trás do Metal</h2>
                 <p>
                     Tony Stark fora da armadura é tão icônico quanto dentro dela. Gênio, bilionário, filantropo — e
@@ -89,11 +95,14 @@
                 </p>
             </div>
             <div>
-                <img src="img/image.png" alt="Tony Stark fora da armadura" />
+                <img id="HF-tony" src="img/image.png" alt="Tony Stark fora da armadura" />
             </div>
         </section>
     </main>
+    <button id="topBtn">⬆ Voltar ao topo</button>
+    <script src="scripts.js" defer></script>
 
+    </script>
     <footer>
         <p>&copy; 2025 Stark Industries News - Todos os direitos reservados.</p>
     </footer>
